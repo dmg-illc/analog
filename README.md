@@ -119,20 +119,3 @@ NO-NE: No Overlap Non-Entailment
 UG: ungrammatical
 
 G: grammatical
-
-
-
-----
-
-#### BERT + SVM & Logistic Regression 
-Run pipeline on the entire dataset: \
-`python src/bert_pipeline.py --datadir data --outdir out
-`
-
-Run pipeline on a subset of the dataset (e.g. for debugging purposes): \
-`python src/bert_pipeline.py --datadir data --outdir out --nitems 100
-`
-
-Set the maximum number of iterations for the Logistic Regression optimiser in case it fails with only a few data points:\
-`python src/bert_pipeline.py --datadir data --outdir out --nitems 20 --lr_maxiter 500
-`
